@@ -1,0 +1,7 @@
+<h1>Device Detector</h1>
+
+<p aria-live="polite">Device type: <strong>{{ _deviceInfo.type }}</strong></p>
+<p aria-live="polite">Operating System: <strong>{{ _deviceInfo.operatingSystem }}</strong></p>
+
+<button class="btn btn-primary" (click)="getUserDevice()">Start Detection</button>
+<p *ngIf="_loading"><em>Loading...</em></p>
